@@ -39,7 +39,7 @@ analizarComentarios(comentarios)
 
 ```
 
-# Ejercicio 2: Simulador de Gestión de Redes 
+# Ejercicio 2: Simulador de Gestión de Redes
 
 Este código Java implementa un simulador de gestión de redes. Aquí hay una explicación detallada:
 
@@ -94,7 +94,6 @@ configuración = obtenerConfiguraciónUsuario()
 simularRed(configuración)
 ```
 
-
 # Ejercicio 3: Análisis de Tendencias en Datos de Redes Sociales
 
 Este código Java implementa un sistema simple para analizar tendencias en datos de redes sociales, utilizando la biblioteca Twitter4J para obtener tweets de Twitter y realizar un análisis básico de tendencias. Aquí está la explicación paso a paso:
@@ -139,7 +138,6 @@ datos = obtenerDatosRedesSociales()
 analizarTendencias(datos)
 ```
 
-
 # Ejercicio 4: Desarrollo de un Asistente Virtual Inteligente
 
 Este programa en Java es un asistente virtual simple que puede interactuar con los usuarios a través de la consola. Aquí tienes una explicación sin el código:
@@ -176,4 +174,51 @@ función interactuarConUsuario():
 
 mientras verdadero:
     interactuarConUsuario()
+```
+
+
+# Ejercicio 5: Sistema de Monitoreo Ambiental con IoT
+
+Este código Java implementa un sistema de monitoreo ambiental utilizando dispositivos IoT (Internet de las Cosas). A continuación, se proporciona una explicación detallada de cada parte del código:
+
+## 1. Definición de la Clase `SistemaMonitoreoAmbiental`
+
+- La clase `SistemaMonitoreoAmbiental` contiene toda la lógica del sistema de monitoreo ambiental.
+- Dentro de esta clase, hay una clase interna llamada `DispositivoIoT`, que representa los datos de un dispositivo IoT. Cada dispositivo tiene un nombre, temperatura, humedad y calidad del aire.
+
+## 2. Función `recolectarDatos`
+
+- Es una función estática que recibe una lista de dispositivos IoT y devuelve una lista de datos simulados.
+- La función simula la recolección de datos generando valores aleatorios para temperatura, humedad y calidad del aire de cada dispositivo.
+
+## 3. Función `mostrarInterfazUsuario`
+
+- Es una función estática que recibe una lista de datos de dispositivos IoT y muestra la información en la consola.
+- En este ejemplo, la información se imprime en la consola con detalles como el nombre del dispositivo, temperatura, humedad y calidad del aire.
+
+## 4. Función `monitorearAmbiente`
+
+- Es una función estática que toma una lista de dispositivos IoT, llama a la función `recolectarDatos` para obtener datos simulados y luego muestra estos datos utilizando la función `mostrarInterfazUsuario`.
+
+## 5. Función `obtenerDispositivosIoT`
+
+- Es una función no estática que crea y devuelve una lista de dispositivos IoT predefinidos con nombres y valores iniciales de temperatura, humedad y calidad del aire.
+
+## 6. Método `main`
+
+- El método `main` es el punto de entrada del programa. Sin embargo, hay un pequeño error, ya que debería ser un método estático (`public static void main(String[] args)`) para ser el punto de entrada válido.
+- En el método `main`, se obtienen los dispositivos IoT mediante la función `obtenerDispositivosIoT` y luego se llama a `monitorearAmbiente` para simular el monitoreo del ambiente.
+
+En resumen, este código Java simula un sistema simple de monitoreo ambiental que utiliza dispositivos IoT para recolectar datos de temperatura, humedad y calidad del aire, y luego muestra estos datos en la consola.
+
+# Pseudocódigo
+
+```java
+función monitorearAmbiente(dispositivos):
+    datos = recolectarDatos(dispositivos)
+    mostrarInterfazUsuario(datos)
+
+dispositivos = obtenerDispositivosIoT()
+monitorearAmbiente(dispositivos)
+
 ```
