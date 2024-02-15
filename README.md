@@ -138,3 +138,42 @@ función analizarTendencias(datos):
 datos = obtenerDatosRedesSociales()
 analizarTendencias(datos)
 ```
+
+
+# Ejercicio 4: Desarrollo de un Asistente Virtual Inteligente
+
+Este programa en Java es un asistente virtual simple que puede interactuar con los usuarios a través de la consola. Aquí tienes una explicación sin el código:
+
+## 1. Inicio del Programa
+
+La clase principal se llama `AsistenteVirtual`. Al ejecutar el programa, se inicia un bucle infinito en el método `main`.
+
+## 2. Interacción con el Usuario
+
+La función `interactuarConUsuario` solicita al usuario que ingrese una solicitud y luego procesa esa solicitud llamando a la función `procesarSolicitud`.
+
+## 3. Procesamiento de Solicitud
+
+La función `procesarSolicitud` verifica la solicitud del usuario y responde en consecuencia. Si la solicitud contiene "hola", responde con un saludo. Si contiene "recordatorio", llama a la función `establecerRecordatorio` para procesar y establecer un recordatorio.
+
+## 4. Establecer Recordatorio
+
+La función `establecerRecordatorio` extrae la hora y la tarea de la solicitud del usuario. Luego, crea un objeto `Recordatorio` con esta información y lo agrega a una lista llamada `listaRecordatorios`. La función devuelve un mensaje confirmando que se estableció el recordatorio.
+
+## 5. Clase `Recordatorio`
+
+Se define una clase interna llamada `Recordatorio` que tiene dos atributos: `hora` (de tipo `Calendar`) y `tarea` (de tipo `String`). Esta clase se utiliza para representar un recordatorio con una hora específica y una tarea asociada.
+
+En resumen, el programa simula la interacción de un asistente virtual que puede saludar al usuario y establecer recordatorios basados en las solicitudes proporcionadas por el usuario. La lógica del recordatorio es simple y puede mejorarse según las necesidades específicas del sistema.
+
+# Pseudocódigo
+
+```java
+función interactuarConUsuario():
+    solicitud = obtenerSolicitudUsuario()
+    respuesta = procesarSolicitud(solicitud)
+    imprimir("Asistente: ", respuesta)
+
+mientras verdadero:
+    interactuarConUsuario()
+```
