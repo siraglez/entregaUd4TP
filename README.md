@@ -20,3 +20,14 @@ Este método extrae el sentimiento de la primera oración de un comentario. Si n
 
 En resumen, el código realiza un análisis de sentimientos en un conjunto de comentarios utilizando la biblioteca Stanford NLP. Cada comentario es procesado para determinar si tiene un sentimiento positivo, negativo o neutral, y el resultado se imprime en la consola.
 
+## Pseudocódigo
+
+```java
+función analizarComentarios(comentarios):
+    para cada comentario en comentarios:
+        sentimiento = determinarSentimiento(comentario)
+        imprimir("Comentario: ", comentario, " - Sentimiento: ", sentimiento)
+
+comentarios = obtenerComentarios()
+analizarComentarios(comentarios)
+
