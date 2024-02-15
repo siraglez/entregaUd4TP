@@ -93,3 +93,48 @@ función simularRed(configuración):
 configuración = obtenerConfiguraciónUsuario()
 simularRed(configuración)
 ```
+
+
+# Ejercicio 3: Análisis de Tendencias en Datos de Redes Sociales
+
+Este código Java implementa un sistema simple para analizar tendencias en datos de redes sociales, utilizando la biblioteca Twitter4J para obtener tweets de Twitter y realizar un análisis básico de tendencias. Aquí está la explicación paso a paso:
+
+## 1. Configuración de credenciales
+
+- Se definen constantes para las credenciales de la API de Twitter (`CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN`, `ACCESS_TOKEN_SECRET`).
+
+## 2. Método principal (`main`)
+
+- Invoca el método `obtenerDatosRedesSociales` para obtener una lista de tweets.
+- Luego, pasa esos datos al método `analizarTendencias` para identificar y mostrar las tendencias.
+
+## 3. Método `obtenerDatosRedesSociales`
+
+- Configura las credenciales de Twitter utilizando la clase `ConfigurationBuilder`.
+- Crea una instancia de la clase `Twitter` utilizando una fábrica (`TwitterFactory`).
+- Realiza una búsqueda de tweets con un hashtag específico (#Java en este caso).
+- Recorre los resultados y agrega el texto de cada tweet a una lista.
+
+## 4. Método `analizarTendencias`
+
+- Invoca el método `identificarTendencias` para contar las ocurrencias de cada palabra que comienza con '#' en los datos obtenidos.
+- Imprime las tendencias identificadas junto con el número de apariciones.
+
+## 5. Método `identificarTendencias`
+
+- Cuenta el número de ocurrencias de cada palabra que comienza con '#' en los datos proporcionados.
+- Utiliza un `HashMap` para almacenar las tendencias y sus respectivas frecuencias.
+
+En resumen, el código realiza una búsqueda de tweets con un hashtag específico, cuenta las ocurrencias de cada tendencia y muestra el resultado. Este es un ejemplo básico y podría mejorarse según las necesidades específicas, como manejar más detalles de los tweets, filtrar por fechas, o incorporar análisis más avanzados.
+
+# Pseudocódigo
+
+```java
+función analizarTendencias(datos):
+    tendencias = identificarTendencias(datos)
+    para cada tendencia en tendencias:
+        imprimir("Tendencia: ", tendencia)
+
+datos = obtenerDatosRedesSociales()
+analizarTendencias(datos)
+```
