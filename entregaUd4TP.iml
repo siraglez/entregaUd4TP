@@ -8,5 +8,11 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="stanford-corenlp-4.5" level="project" />
+    <orderEntry type="library" name="java" level="project" />
   </component>
+  <dependency>
+      <groupId>org.twitter4j</groupId>
+      <artifactId>twitter4j-core</artifactId>
+      <version>4.0.7</version> <!-- Utiliza la versión más reciente disponible -->
+  </dependency>
 </module>

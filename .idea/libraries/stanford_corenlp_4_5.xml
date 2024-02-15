@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="stanford-corenlp-4.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/UAX/Técnicas de programación/stanford-corenlp-4.5.6" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/UAX/Técnicas de programación/stanford-corenlp-4.5.6" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/UAX/Técnicas de programación/stanford-corenlp-4.5.6" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/UAX/Técnicas de programación/stanford-corenlp-4.5.6" recursive="false" type="SOURCES" />
+  </library>
+</component>
