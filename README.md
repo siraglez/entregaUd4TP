@@ -222,3 +222,45 @@ dispositivos = obtenerDispositivosIoT()
 monitorearAmbiente(dispositivos)
 
 ```
+
+
+# Ejercicio 6: Algoritmo de Detección de Fraude
+
+Este código Java simula un sistema simple de detección de fraudes en transacciones financieras. Aquí hay una descripción del código:
+
+## 1. Clase `Transaccion`
+
+- Representa una transacción financiera con diferentes atributos como `fraudu` (indicando si es fraudulenta), `id` (identificador único), `importe` (cantidad de dinero involucrada en la transacción), `concepto` (descripción de la transacción), `idOd` (identificador del origen) e `idBe` (identificador del beneficiario).
+- Contiene métodos para marcar una transacción como fraudulenta (`marcarComoFraudulenta()`) y para obtener el estado de fraude (`getFraudu()`).
+
+## 2. Clase `Transacciones`
+
+- Representa una colección de transacciones (`ArrayList<Transaccion>`).
+- Tiene métodos para agregar transacciones (`addTransaccion()`) tanto creando una nueva transacción como añadiendo una transacción ya existente.
+
+## 3. Clase `GeneradorTransaccionesAleatorias`
+
+- Proporciona un método estático `generarColeccionTransacciones()` que genera y devuelve una colección de transacciones con valores aleatorios.
+
+## 4. Clase `DetectorTransaccionesFraudulentas`
+
+- Utiliza el generador de transacciones aleatorias para crear una colección de transacciones.
+- Tiene un método `detectarFraude()` que itera sobre las transacciones y marca aquellas que son fraudulentas.
+
+## 5. Clase `AlgoritmoDeteccionFraude`
+
+- Contiene el método `main()` que crea una instancia de `Transacciones` utilizando el generador de transacciones aleatorias.
+
+En resumen, el código simula un sistema simple de detección de fraudes que genera aleatoriamente un conjunto de transacciones, algunas de las cuales son marcadas como fraudulentas. Luego, el detector de fraudes examina estas transacciones y marca las fraudulentas.
+
+# Pseudocódigo
+
+```java
+función detectarFraude(transacciones):
+    para cada transacción en transacciones:
+        si esFraudulenta(transacción):
+            marcarComoFraudulenta(transacción)
+
+transacciones = obtenerTransacciones()
+detectarFraude(transacciones)
+```
