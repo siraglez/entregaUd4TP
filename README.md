@@ -43,41 +43,41 @@ analizarComentarios(comentarios)
 
 Este código Java implementa un simulador de gestión de redes. Aquí hay una explicación detallada:
 
-## 1. Clase `SimuladorGestionRedes`
+## 1. Clase `ejercicio2.SimuladorGestionRedes`
 
 - En el método `main`, se inicia la ejecución del programa.
 - Se llama a `obtenerConfiguracionUsuario()` para solicitar al usuario la configuración de la red.
 - Luego, se llama a `simularRed` para realizar la simulación con la configuración proporcionada.
 
-## 2. Clase `ConfiguracionRed`
+## 2. Clase `ejercicio2.ConfiguracionRed`
 
 - Almacena la configuración de la red, como el número de routers y switches.
 - Se crea a partir de los datos ingresados por el usuario en `obtenerConfiguracionUsuario()`.
 
-## 3. Clase `Red`
+## 3. Clase `ejercicio2.Red`
 
 - Representa la red de computadoras según la configuración proporcionada.
-- Se crea a partir de una instancia de `ConfiguracionRed`.
+- Se crea a partir de una instancia de `ejercicio2.ConfiguracionRed`.
 - Ofrece un método `getNumNodos()` que devuelve el número total de nodos en la red (suma de routers y switches).
 
-## 4. Clase `TraficoRed`
+## 4. Clase `ejercicio2.TraficoRed`
 
 - Representa el tráfico entre nodos de la red.
 - La matriz `matrizTrafico` almacena valores aleatorios de tráfico entre nodos.
 - Se utiliza en el método `simularTrafico()` para simular el tráfico en la red.
 
-## 5. Clase `CuellosDeBotella`
+## 5. Clase `ejercicio2.CuellosDeBotella`
 
 - Representa un cuello de botella entre dos nodos en la red.
 - Se crea en el método `identificarCuellosDeBotella()` basándose en el análisis de la matriz de tráfico.
 
 ## 6. Funciones del programa
 
-- `obtenerConfiguracionUsuario()`: Solicita al usuario el número de routers, switches y otros datos necesarios para configurar la red. Devuelve un objeto `ConfiguracionRed`.
-- `simularRed(ConfiguracionRed configuracion)`: Crea una instancia de `Red` basada en la configuración, simula el tráfico y busca cuellos de botella. Luego, muestra los resultados.
-- `simularTrafico(Red red)`: Simula el tráfico entre nodos en la red y devuelve un objeto `TraficoRed`.
-- `identificarCuellosDeBotella(TraficoRed trafico)`: Analiza la matriz de tráfico y devuelve un objeto `CuellosDeBotella` que representa el cuello de botella detectado.
-- `mostrarResultados(CuellosDeBotella cuellosDeBotella)`: Muestra los resultados de la simulación, específicamente el cuello de botella detectado.
+- `obtenerConfiguracionUsuario()`: Solicita al usuario el número de routers, switches y otros datos necesarios para configurar la red. Devuelve un objeto `ejercicio2.ConfiguracionRed`.
+- `simularRed(ejercicio2.ConfiguracionRed configuracion)`: Crea una instancia de `ejercicio2.Red` basada en la configuración, simula el tráfico y busca cuellos de botella. Luego, muestra los resultados.
+- `simularTrafico(ejercicio2.Red red)`: Simula el tráfico entre nodos en la red y devuelve un objeto `ejercicio2.TraficoRed`.
+- `identificarCuellosDeBotella(ejercicio2.TraficoRed trafico)`: Analiza la matriz de tráfico y devuelve un objeto `ejercicio2.CuellosDeBotella` que representa el cuello de botella detectado.
+- `mostrarResultados(ejercicio2.CuellosDeBotella cuellosDeBotella)`: Muestra los resultados de la simulación, específicamente el cuello de botella detectado.
 
 En resumen, este programa solicita al usuario la configuración de una red, simula el tráfico en la red y muestra los posibles cuellos de botella. La simulación es básica y utiliza valores aleatorios para el tráfico entre nodos.
 
@@ -146,7 +146,7 @@ Este programa en Java es un asistente virtual simple que puede interactuar con l
 
 ## 1. Inicio del Programa
 
-La clase principal se llama `AsistenteVirtual`. Al ejecutar el programa, se inicia un bucle infinito en el método `main`.
+La clase principal se llama `ejercicio4.AsistenteVirtual`. Al ejecutar el programa, se inicia un bucle infinito en el método `main`.
 
 ## 2. Interacción con el Usuario
 

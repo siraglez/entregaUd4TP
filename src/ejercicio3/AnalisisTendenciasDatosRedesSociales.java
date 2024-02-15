@@ -1,3 +1,5 @@
+package ejercicio3;
+
 import twitter4j.*;
 
 import java.util.ArrayList;

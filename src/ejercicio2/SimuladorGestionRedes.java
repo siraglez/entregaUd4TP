@@ -1,3 +1,5 @@
+package ejercicio2;
+
 import java.util.Scanner;
 
 public class SimuladorGestionRedes {
@@ -21,7 +23,7 @@ public class SimuladorGestionRedes {
         int numSwitches = scanner.nextInt();
         //Agregar más datos necesarios para la red
 
-        //Crear y devolver un objeto ConfiguracionRed con la información ingresada por el usuario
+        //Crear y devolver un objeto ejercicio2.ConfiguracionRed con la información ingresada por el usuario
         return new ConfiguracionRed(numRouters, numSwitches);
     }
 
