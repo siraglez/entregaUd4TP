@@ -357,3 +357,48 @@ función generarCitaConContexto(contexto):
 contexto = obtenerContextoUsuario()
 generarCitaConContexto(contexto)
 ```
+
+
+# Ejercicio 9: Validador de Expresiones Matemáticas
+
+Este código Java se encarga de validar expresiones matemáticas ingresadas por el usuario en términos de sintaxis y paréntesis balanceados. A continuación, se presenta una explicación detallada del código:
+
+## 1. Paquete y Clase
+
+El código está organizado en el paquete `ejercicio9` y contiene una clase llamada `ValidadorExpresionesMatematicas`.
+
+## 2. Método Main
+
+El método `main` es el punto de entrada del programa. Se crea un objeto `Scanner` para leer la entrada del usuario desde la consola. El usuario ingresa una expresión matemática, y luego se llama a la función `validarExpresion` para verificar su validez. Se imprime un mensaje indicando si la expresión es válida o no.
+
+## 3. Función ValidarExpresion
+
+La función `validarExpresion` utiliza dos funciones auxiliares, `comprobarSintaxis` y `verificarParentesisBalanceados`, para validar la sintaxis general y la correcta colocación de paréntesis en la expresión, respectivamente.
+
+## 4. Función ComprobarSintaxis
+
+La función `comprobarSintaxis` verifica si la expresión contiene solo caracteres válidos para una expresión matemática. Utiliza un bucle `for-each` para iterar sobre cada carácter de la expresión y verifica si está en la lista de caracteres válidos (números, operadores y paréntesis).
+
+## 5. Función VerificarParentesisBalanceados
+
+La función `verificarParentesisBalanceados` utiliza una pila (`Stack`) para rastrear la correcta colocación de los paréntesis en la expresión. Recorre cada carácter de la expresión y, si encuentra un paréntesis de apertura, lo apila. Si encuentra un paréntesis de cierre, verifica si el último paréntesis de apertura en la pila es su pareja correspondiente. La función devuelve `true` si los paréntesis están balanceados (la pila está vacía al final).
+
+## 6. Función EsParValido
+
+La función `esParValido` verifica si un paréntesis de apertura y uno de cierre son del mismo tipo (paréntesis, corchetes o llaves).
+
+En resumen, este código proporciona una estructura básica para validar expresiones matemáticas, asegurándose de que la sintaxis general sea correcta y de que los paréntesis estén balanceados adecuadamente.
+
+# Pseudocódigo
+
+```java
+función validarExpresión(expresión):
+    es_valida = comprobarSintaxis(expresión)
+    si es_valida:
+        imprimir("La expresión es válida")
+    si no:
+        imprimir("La expresión no es válida")
+
+expresión = obtenerExpresiónUsuario()
+validarExpresión(expresión)
+```
