@@ -363,9 +363,9 @@ generarCitaConContexto(contexto)
 
 Este código Java se encarga de validar expresiones matemáticas ingresadas por el usuario en términos de sintaxis y paréntesis balanceados. A continuación, se presenta una explicación detallada del código:
 
-## 1. Paquete y Clase
+## 1. Clase
 
-El código está organizado en el paquete `ejercicio9` y contiene una clase llamada `ValidadorExpresionesMatematicas`.
+El código contiene una clase principal llamada `ValidadorExpresionesMatematicas`.
 
 ## 2. Método Main
 
