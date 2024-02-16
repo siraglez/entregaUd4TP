@@ -18,7 +18,7 @@ class DetectorTransaccionesFraudulentas{
     }
 
     public void detectarFraude() {
-        ArrayList<Transacciones> arTs = (ArrayList<Transacciones>) this.ts;
+        ArrayList<Transacciones> arTs = (ArrayList<Transacciones> this.ts);
         for (Transaccion t : this.ts) {
             if (t.getFraudu()) {
                 t.marcarComoFraudulenta();
