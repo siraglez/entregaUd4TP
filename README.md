@@ -264,3 +264,50 @@ función detectarFraude(transacciones):
 transacciones = obtenerTransacciones()
 detectarFraude(transacciones)
 ```
+
+
+# Ejercicio 7: Generador de Citas Inspiradoras
+
+Este código en Java implementa un programa que genera citas inspiradoras de forma aleatoria a partir de una lista predefinida de citas y autores. El programa permite a los usuarios obtener una nueva cita cada vez que lo soliciten. Aquí tienes una explicación detallada del código:
+
+## 1. Clase:
+
+- La clase principal se llama `GeneradorCitasInspiradoras`.
+
+## 2. Importaciones:
+
+- Se importan las clases necesarias del paquete `java.util`, como `ArrayList`, `Arrays`, `List`, `Random` y `Scanner`, para utilizar estructuras de datos y facilitar la entrada de datos.
+
+## 3. Método `main`:
+
+- Se define el método principal `main` que inicia la ejecución del programa.
+- Se crea una lista llamada `citas` que contiene algunas citas inspiradoras junto con sus respectivos autores.
+- Se utiliza un bucle `while (true)` para generar citas de forma continua.
+- Dentro del bucle, se llama a la función `generarCita(citas)` para imprimir una cita inspiradora aleatoria.
+- Luego, se llama a la función `esperarSolicitudNuevaCita()` para preguntar al usuario si desea otra cita.
+
+## 4. Método `generarCita`:
+
+- Este método toma una lista de citas como parámetro.
+- Se utiliza un objeto `Random` para generar un índice aleatorio dentro del rango de la lista de citas.
+- La cita correspondiente al índice generado se imprime en la consola.
+
+## 5. Método `esperarSolicitudNuevaCita`:
+
+- Este método utiliza un objeto `Scanner` para obtener la entrada del usuario.
+- Pregunta al usuario si desea otra cita, esperando una respuesta "si" o "no" (en minúsculas).
+- Si la respuesta no es "si", el programa imprime "¡Hasta luego!" y se cierra con `System.exit(0)`.
+
+En resumen, el programa genera y muestra citas inspiradoras de forma continua, permitiendo al usuario obtener nuevas citas o salir del programa según su preferencia. La estructura modular del código facilita la comprensión y mantenimiento.
+
+# Pseudocódigo
+
+```java
+función generarCita():
+    cita = obtenerCitaAleatoria()
+    imprimir("Cita Inspiradora: ", cita)
+
+mientras verdadero:
+    generarCita()
+    esperarSolicitudNuevaCita()
+```
