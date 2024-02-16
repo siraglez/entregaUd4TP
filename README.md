@@ -311,3 +311,49 @@ mientras verdadero:
     generarCita()
     esperarSolicitudNuevaCita()
 ```
+
+
+# Ejercicio 8: Generador de Citas Inspiradoras con Contexto
+
+Este código en Java implementa un generador de citas inspiradoras que permite al usuario seleccionar el estado de ánimo o contexto deseado para la cita. Aquí tienes una explicación detallada del código:
+
+## 1. Declaración e Inicialización de Listas:
+
+- Se crean dos listas, `citasMotivadoras` y `citasAnimadas`, que contienen citas inspiradoras asociadas a los estados de ánimo "motivadora" y "animada", respectivamente.
+
+## 2. Bucle Principal (`while (true) { ... }`):
+
+- Se establece un bucle infinito que permite al usuario obtener citas de forma continua.
+- En cada iteración del bucle, se solicita al usuario que seleccione el estado de ánimo o contexto deseado para la cita, utilizando la entrada proporcionada mediante `Scanner`.
+
+## 3. Switch Statement (`switch (estadoAnimo) { ... }`):
+
+- Se utiliza un bloque `switch` para manejar la elección del usuario.
+- Si el estado de ánimo es "motivadora", se llama a la función `generarCita` con la lista de citas motivadoras.
+- Si el estado de ánimo es "animada", se llama a la función `generarCita` con la lista de citas animadas.
+- En caso de una opción no válida, se imprime un mensaje indicando que la opción es inválida y se pide al usuario que lo intente de nuevo.
+
+## 4. Método `generarCita`:
+
+- Este método toma una lista de citas como parámetro.
+- Utiliza un objeto `Random` para generar un índice aleatorio dentro del rango de la lista de citas.
+- La cita correspondiente al índice generado se imprime en la consola.
+
+## 5. Método `esperarSolicitudNuevaCita`:
+
+- Este método utiliza un objeto `Scanner` para obtener la respuesta del usuario a la pregunta de si desea otra cita.
+- La respuesta se convierte a mayúsculas con `toUpperCase()` para aceptar respuestas tanto en mayúsculas como en minúsculas.
+- Si la respuesta no es "SI", se imprime "¡Hasta luego!" y el programa se cierra con `System.exit(0)`.
+
+En resumen, el programa ofrece un menú interactivo que permite al usuario elegir entre citas motivadoras o animadas. Después de mostrar la cita seleccionada, se pregunta al usuario si desea obtener otra cita o salir del programa. La estructura modular y el uso de listas facilitan la expansión del programa con nuevos estados de ánimo o categorías de citas.
+
+# Pseudocódigo
+
+```java
+función generarCitaConContexto(contexto):
+    cita = obtenerCitaPorContexto(contexto)
+    imprimir("Cita Inspiradora: ", cita)
+
+contexto = obtenerContextoUsuario()
+generarCitaConContexto(contexto)
+```
